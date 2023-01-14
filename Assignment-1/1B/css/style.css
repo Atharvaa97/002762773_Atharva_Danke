@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,46,11,1) 40%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container::before{
+    content: "";
+    position: absolute;
+    top: -10%;
+    right: 50%;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-20deg, #000, #000);
+    transform: translateY(-45%);
+    z-index: 6;
+    transition: 2s ease-in-out;
+}
+
+
+/* Form Styling */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.btn:hover, .btn:focus{
+    background: #1d899f;
+    color: black ;
+}
+
+.Login_Form{
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 5;
+}
+
+.form-box {
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 35px;
+	box-shadow: 0 0 5px #000;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 400px;
+	height: 340px;
+}
+
+.form-box .header-text {
+	font-size: 40px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+    color: #fff;
+}
+
+.form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 15px;
+	font-family: poppins;
+}
+
+.form-box button {
+	background-color: red;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 40%;
+	font-size: 20px;
+	padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Panel Styling */
+
+.panels{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 7;
+    overflow-y: auto;
+}
+.left__panel{
+    pointer-events: all;
+    padding: 30px 15% 20px 10%;
+    transition: 1s .6s ease-in-out;
+}
+
+
+
+/* Panel Images */
+
+
+.panel__img{
+    width: 70%;
+    padding-top: 25px;
+    transition: 1s .6s ease-in-out;
+}
+
+.panel__imgflix{
+    width: 60%;
+    padding-top: 1px;
+    transition: 1s .6s ease-in-out;
+}
+
+
+/* 2nd Page Titles */
+
+.title{
+    font-size: 38px;
+    font-weight:bold;
+    text-align: center;
+    color: white;
+}
+
+.videotitle{
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    text-align: center;
+}
