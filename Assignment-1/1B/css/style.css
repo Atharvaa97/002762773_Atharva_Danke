@@ -34,8 +34,6 @@ form{
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
 }
 
 .btn:hover, .btn:focus{
@@ -45,7 +43,7 @@ form{
 
 .Login_Form{
     position: absolute;
-    top: 40%;
+    top: 53%;
     left: 75%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -53,7 +51,7 @@ form{
 }
 
 .form-box {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.6);
 	margin: auto auto;
 	padding: 40px;
 	border-radius: 35px;
@@ -129,8 +127,8 @@ form{
 
 
 .panel__img{
-    width: 70%;
-    padding-top: 25px;
+    width: 60%;
+    padding-top: 15px;
     transition: 1s .6s ease-in-out;
 }
 
@@ -140,19 +138,9 @@ form{
     transition: 1s .6s ease-in-out;
 }
 
-
-/* 2nd Page Titles */
-
 .title{
-    font-size: 38px;
+    font-size: 30px;
     font-weight:bold;
     text-align: center;
-    color: white;
-}
-
-.videotitle{
-    font-size: 20px;
-    font-weight:bold;
-    color: white;
-    text-align: center;
+    color: red;
 }

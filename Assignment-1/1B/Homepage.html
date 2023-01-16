@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
     <title>Homepage</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="images/png"  href="images/NEU.png">
     <link rel="stylesheet" href="css/table-style.css">
     <link rel="stylesheet" href="css/videostyle.css">
     <style>
@@ -15,29 +16,114 @@ p {
 </style> 
 </head>
 <body style="margin: 40px;">
-<a class='button_display_main' href='./Colleges.php'>Colleges</a>
-<a class='button_display_main' href='./Events.php'>Events</a>
-<a class='button_display_main' href='./Venues.php'>Venue</a>
-<a class='button_display_main' href='logout.php'>Logout</a>
+  <div id="container">
+      <img  style="float:left" src="images\nuflix.jpg" alt="" WIDTH=130 HEIGHT=130>
+      <br> <br>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Tickets</a>
+    <a href="#contact">NUTV</a>
+    <a href="#contact">About</a>
+    <a href="#contact">My Account</a>
+    <a href="index.html">Logout</a>
+  </div> 
+  </div>
 <br>
 <br>
-<br>
-<h2 class="title">What's hot at Northeastern? </h2>
-<br><br>
-
-<div id="container">
+  <div id="container">
   <div class="gallery">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRIRRjZioY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p class="videotitle">Husky vs Husky: Frozen Fenway </p>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/xRIRRjZioY0"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </a>
+  </div>
+  </div>
+
+  <p class="title">Merchandise</p>
+
+  <div id="container2" style="width: 100%;">
+  <div class="gallery_merch1">
+  <a href="Images/jersey1.jpg" target="_blank">
+      <img class="mech-image" src="Images/jersey1.jpg" alt="football">
+      <div class="desc"> Northeastern Basketball Jersey</div>
   </a>
   </div>
 
-  <div class="gallery">
-  <a href="Images/shoes.png" target="_blank">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/AY9rspUD6s0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <p class="videotitle">Northeastern Wrapped 2022!</p>
+  <div class="gallery_merch1">
+  <a href="Images/HockJersey.jpg" target="_blank">
+      <img src="Images/HockJersey.jpg" alt="football">
+      <div class="desc"> Northeastern Ice Hockey Jersey (White)</div>
   </a>
-  </div>
+</div>
+
+<div class="gallery_merch">
+  <a href="Images/HockJersey2.jpg" target="_blank">
+      <img src="Images/HockJersey2.jpg" alt="football">
+      <div class="desc"> Northeastern Ice Hockey Jersey (Black)</div>
+  </a>
+</div>
+</div>
+
+<div id="container2">
+<div class="gallery_merch1">
+  <a href="Images/Hoodie.jpg" target="_blank">
+      <img src="Images/Hoodie.jpg" alt="football">
+      <div class="desc"> Northeastern Hoodie (Grey) </div>
+  </a>
+</div>
+
+<div class="gallery_merch1">
+  <a href="Images/Hoodie2.jpg" target="_blank">
+      <img src="Images/Hoodie2.jpg" alt="football">
+      <div class="desc"> Northeastern Hoodie (Red)</div>
+  </a>
+</div>
+
+<div class="gallery_merch">
+  <a href="Images/Hoodie3.jpeg" target="_blank">
+      <img src="Images/Hoodie3.jpeg" alt="football">
+      <div class="desc"> Northeastern Hoodie (Black)</div>
+  </a>
+</div>
 </div>
 </body>
+
+
+
+
+<footer class="footer">
+
+  <div class="footer-left">
+
+    <img src="images\nuflix.jpg" alt="" WIDTH=150 HEIGHT=100>
+    <p style="color: #8f9296; font-size: 14px;">NUFlix &copy; 2023</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>360 Huntington Avenue</span> Boston, MA</p>
+    </div>
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>(857)-693-8526</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">NUFlix.support@northeastern.edu</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p class="footer-company-about">
+      <span>About NUFlix</span> NUFlix is an organization that provides match updates, news, score, tickets, merchandise etc for Northeastern students
+    </p>
+
+  </div>
+
+</footer>
 </html>
