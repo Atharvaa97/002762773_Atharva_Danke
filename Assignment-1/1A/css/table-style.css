@@ -1,0 +1,81 @@
+body{
+  background-color:   #f3f0f0  ;
+}
+
+.panel_display{
+  font-size: 27px;
+  line-height: 1;
+  color: #fff;
+}
+
+/* 2nd Page Titles */
+
+.title{
+  font-size: 46px;
+  font-weight:bold;
+  text-align: center;
+  color: black;
+}
+
+.videotitle{
+  font-size: 20px;
+  font-weight:bold;
+  color: white;
+  text-align: center;
+}
+
+
+
+.topnav {
+  background-color: rgba(0, 0, 0, 0.7);
+overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+
+.topnav a {
+  float: left;
+  color: whitesmoke;
+  font-weight: normal;
+  text-align: center;
+  padding: 16px 12px;
+  text-decoration: none;
+  font-size: 22px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #E0C9A6;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+  background-color: red;
+  color: white;
+  }
+
+
+.overlay {
+  position: absolute;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-color: #9bcd9b;
+    }
+   
+  .container2:hover .overlay {
+    opacity: 1;
+    }
+    
+  .overlayFade {
+    height: 250px;
+    width: 250px;
+    top: 0;
+    left: 75px;
+    background-color: #9bcd9b;
+    }
+
+
+
+
+

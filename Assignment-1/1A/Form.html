@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Library Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="images/jpg"  href="images/Husky.jpg">
+    <link rel="stylesheet" href="css/table-style.css">
+    <link rel="stylesheet" href="css/videostyle.css">
+    <style> 
+        input[type=text] {
+          width: 546PX;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+        </style>
+</head>
+<body style="margin: 40px;">
+    <div id="container">
+        <img  style="float:left" src="images\Husky.jpg" alt="" WIDTH=130 HEIGHT=130>
+        <br> <br>
+    <div class="topnav">
+      <a href="homepage.html">Home</a>
+      <a href="#contact">About</a>
+      <a href="Careers.html">Careers</a>
+      <a href="#news">Articles</a>
+      <a href="#contact">E-Books</a>
+      <a class="active" href="Form.html">Apply for library Card</a>
+      <a href="#contact">Sign-in</a>
+      <a href="index.html">Login</a>
+      <div class="search-box">
+        <form action="search.php" method="get">
+            <input type="text" name="search" maxlength="60" placeholder="Search..." required>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    </div> 
+    </div> <br><br><br>
+
+    <p class="title">Welcome to Husky Library!</p>
+
+    <div class="row">
+        <div class="col-25">
+          <b><label for="fname">First Name:</label></b>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Enter your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <b><label for="lname">Last Name:</label></b>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <b><label for="lname">NUID:</label></b>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Enter your NUID..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+            <b><label for="lname">Program:</label></b>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Enter your program name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <b><label for="subject">Address:</label></b>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Enter your residential address" style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-25">
+            <b><label for="country">Campus:</label></b>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Boston</option>
+            <option value="canada">Arlington</option>
+            <option value="usa">Seattle</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+</body>
+</html>
