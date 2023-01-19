@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply for Library Card</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="images/jpg"  href="images/Husky.jpg">
     <link rel="stylesheet" href="css/table-style.css">
     <link rel="stylesheet" href="css/videostyle.css">
+    <link rel="icon" type="images/jpg"  href="images/Husky.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style> 
         input[type=text] {
           width: 546PX;
@@ -24,7 +24,7 @@
         <img  style="float:left" src="images\Husky.jpg" alt="" WIDTH=130 HEIGHT=130>
         <br> <br>
     <div class="topnav">
-      <a href="homepage.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="#contact">About</a>
       <a href="Careers.html">Careers</a>
       <a href="#news">Articles</a>
@@ -34,7 +34,7 @@
       <a href="index.html">Login</a>
       <div class="search-box">
         <form action="search.php" method="get">
-            <input type="text" name="search" maxlength="60" placeholder="Search..." required>
+            <input type="text" name="search" style="height: 12px" maxlength="60" placeholder="Search..." required>
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
@@ -79,7 +79,7 @@
         <div class="col-25">
           <b><label for="subject">Address:</label></b>
         </div>
-        <div class="col-75">
+        <div class="col-85">
           <textarea id="subject" name="subject" placeholder="Enter your residential address" style="height:200px"></textarea>
         </div>
       </div>
@@ -89,7 +89,8 @@
             <b><label for="country">Campus:</label></b>
         </div>
         <div class="col-75">
-          <select id="country" name="country">
+          <select id="country" name="country" required>
+            <option value="" disabled selected hidden>Choose your campus</option>
             <option value="australia">Boston</option>
             <option value="canada">Arlington</option>
             <option value="usa">Seattle</option>

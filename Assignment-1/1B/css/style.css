@@ -137,10 +137,3 @@ form{
     padding-top: 1px;
     transition: 1s .6s ease-in-out;
 }
-
-.title{
-    font-size: 30px;
-    font-weight:bold;
-    text-align: center;
-    color: red;
-}

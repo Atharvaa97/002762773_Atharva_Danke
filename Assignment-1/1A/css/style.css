@@ -81,6 +81,12 @@ footer {
   
   .col-75 {
     float: left;
+    width: 38%;
+    margin-top: 6px;
+  }
+
+  .col-85 {
+    float: left;
     width: 36%;
     margin-top: 6px;
   }
@@ -95,6 +101,7 @@ footer {
     content: "";
     display: table;
     clear: both;
+    
   }
 
 
@@ -120,6 +127,6 @@ footer {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: black;
     color: white;
   }
