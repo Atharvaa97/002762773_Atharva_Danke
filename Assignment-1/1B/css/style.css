@@ -137,3 +137,10 @@ form{
     padding-top: 1px;
     transition: 1s .6s ease-in-out;
 }
+
+
+.Pod_Image
+{
+    width: 30% ;
+    height: 30% ;
+}
