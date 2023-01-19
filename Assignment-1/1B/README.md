@@ -4,21 +4,21 @@ A simple website for the university's merchandise, news, and updates.
 
 HTML5 Tags used in the website:
 
-1. Header: Used the <header> tag, under which I added the navigation bar.
+1. Header: Used the "header" tag, under which I added the navigation bar.
 
-2. Footer: Used the <footer> tag to define the footer for the webpages.
+2. Footer: Used the "footer" tag to define the footer for the webpages.
 
-3. Video: On the homepage, I used the video> tag to embed video content.
+3. Video: On the homepage, I used the "video" tag to embed video content.
 
-	a. Source: Made use of the <source> tag to add the video path.
+	a. Source: Made use of the "source" tag to add the video path.
 
-4. Audio: On the Podcasts page, I used the audio> tags to embed various audio files.
+4. Audio: On the Podcasts page, I used the "audio" tags to embed various audio files.
 
-5. Figure: Used the <figure> tag to specify the content of the video mentioned on the homepage.
+5. Figure: Used the "figure" tag to specify the content of the video mentioned on the homepage.
 
-	a. Figcaption: A caption for a <figure> element was defined using the figcaption> tag.
+	a. Figcaption: A caption for a "figure" element was defined using the "figcaption" tag.
 
-6. Aside: The <aside> tag was used to define content that is separate from the content it is placed in. Used i to place the headline of the news as a sidebar on the webpage.
+6. Aside: The "aside" tag was used to define content that is separate from the content it is placed in. Used i to place the headline of the news as a sidebar on the webpage.
 
 
 
