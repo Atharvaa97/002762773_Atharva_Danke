@@ -20,4 +20,4 @@ HTML Tags used in the website:
 
 7. Div: The "div" tags were used for container boxes on all pages.
 
-8. Link: Used the "link tag" to link to external style sheets and to add a favicon to the web pages.
+8. Link: Used the "link" tag to link to external style sheets and to add a favicon to the web pages.

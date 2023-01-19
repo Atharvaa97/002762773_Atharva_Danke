@@ -24,18 +24,18 @@ HTML5 Tags used in the website:
 
 HTML Tags used in the website:
 
-1. Favicon: Added Favicon using the <link> tag to all the pages to display the Husky Library logo image next to the page title in the browser tab.
+1. Favicon: Added Favicon using the "link" tag to all the pages to display the Husky Library logo image next to the page title in the browser tab.
 
-2. Form: Used the <form> tag to include a login form on the index page.
+2. Form: Used the "form" tag to include a login form on the index page.
 
-a. Input: Used <input> tags for the input fields where the user can enter their data in order to login to the NUFLix.
+a. Input: Used "input" tags for the input fields where the user can enter their data in order to login to the NUFLix.
 
-4. Images: Used <img> tag to add images of merchandise to the homepage..
+4. Images: Used "img" tag to add images of merchandise to the homepage..
 
-5. Hyperlink: Added links to the index, homepage and podcasts page using the <a> tag.
+5. Hyperlink: Added links to the index, homepage and podcasts page using the "a" tag.
 
-6. Button: Used the <button> tag to add a "Submit" button to the login form.
+6. Button: Used the "button" tag to add a "Submit" button to the login form.
 
-7. Div: The <div> tags were used for container boxes on all pages.
+7. Div: The "div" tags were used for container boxes on all pages.
 
-8. Link: Used the <link> tag to link to external style sheets and to add a favicon to the web pages.
+8. Link: Used the "link" tag to link to external style sheets and to add a favicon to the web pages.
