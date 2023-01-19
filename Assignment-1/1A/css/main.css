@@ -1,5 +1,6 @@
 body {
   background-color: #f3f0f0;
+  margin: 40px;
 }
 
 /* Title Styling */
@@ -101,4 +102,10 @@ input[type="submit"]:hover {
   text-align: left;
   background-color: black;
   color: white;
+}
+
+/* Quote Styling */
+
+.i {
+  color: red;
 }
