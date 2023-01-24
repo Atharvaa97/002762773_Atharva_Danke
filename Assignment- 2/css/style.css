@@ -32,7 +32,19 @@ p {
 .section-heading {
   text-align: left;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
+}
+
+.intro-heading {
+  text-align: left;
+  position: relative;
+  color: #fff;
+  margin-top: 0px;
+  font-size: 32px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  display: inline-block;
+  margin-right: 50px;
 }
 
 .section-heading h1 {
@@ -793,3 +805,23 @@ header {
   }
 
 }
+
+
+
+.float-container {
+  padding: 0px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}  
+
+.float-child-1 {
+  width: 50%;
+  float: left;
+  padding: 5px;
+  margin-top: 85px;
+  margin-left: -60px;
+}  
