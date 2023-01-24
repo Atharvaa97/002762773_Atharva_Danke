@@ -1,35 +1,49 @@
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .content {
+    background-color: lightblue;
+  }
+}
+
+
 input[type="text"],
 select,
 textarea {
-  width: 100%;
+  width: 375px;
   padding: 12px;
   border: 1px solid black;
   border-radius: 4px;
   resize: vertical;
-  background-color: grey;
-  margin-left: -160px;
+  background-color: lightgray;
+  margin-left: 10px;
   
 }
 
 label {
   padding: 8px 2px 14px 1px;
   display: inline-block;
+  color: white;
+  font: 15px
 }
 
 input[type="submit"] {
-  background-color: white;
-  color: BLACK;
-  padding: 12px 20px;
-  margin-left: 50%;
+  background-color: #bdeee6;
+  border: 2px solid #070707;
+  padding: 12px 25px;
+  color: black;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-left: 83%;
   text-align: center;
-  border: none;
+  font-size: 14px;
+  font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: black;
+  background:#262728;
   color: white;
+  transition: .3s;
 }
 
 .col-25 {
@@ -146,6 +160,10 @@ div.desc {
 
 .title {
   color: grey;
+  font-size: 18px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: #ffffff;
+padding: 0%;
 }
 
 .heading {
@@ -446,7 +464,6 @@ div.desc {
   display: inline-block;
   padding: 1rem 1rem;
   vertical-align: middle;
-  float: right;
   width: 40%;
   margin-top: 0px;
 }
@@ -460,6 +477,20 @@ div.desc {
   overflow: hidden;
   text-overflow: clip;
 }
+
+.form_style{
+  font-size: 18px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  margin-top: 10px;
+}
+
+
+
+
 
 .ed_details{
   font-size: 20px;
@@ -484,4 +515,23 @@ div.desc {
   font-size: 16px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #9aa09f;
+}
+
+
+
+
+
+
+
+#contactme {
+  display: flex;
+  justify-content: space-around;
+}
+
+#left {
+  width: 40%;
+}
+
+#right {
+  width: 40%;
 }

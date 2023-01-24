@@ -9,6 +9,7 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/effects.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                         </a>
                         </li>
                         <li>
-                    <a href="#experience">
+                    <a href="#workexp">
                         <span class="rect"></span>
                         <span class="circle"></span>
                         Work Experience
@@ -165,6 +166,78 @@
                 </div>
             </div>
         </section>
+        <section id="workexp" class="content-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h1>Work Experience</h1>
+                    </div>
+                </div>
+                <div id="contactme">
+                    <div id="left">
+                        <img class="work_img" src="img/accenturelogo.png" width="300" height="180" />
+                        <div class="timeline">
+                            <div class="outer">
+                                <div class="card">
+                                    <div class="info">
+                                        <h3 class="work_title">Application Development Analyst</h3>
+                                        <p class="compname">Capital Group (Nov 2021 - Aug 2022)</p>
+                                        <p class="edu_para">Designed, built, and configured applications using Anypoint Platform
+                                            and Studio to
+                                            meet the
+                                            business process and application requirements. </p>
+                                        <p class="edu_para">Worked on complex integrations, such as creating or retrieving ids
+                                            from a source
+                                            system
+                                            database and transforming the data associated with that id into the format expected
+                                            by the
+                                            target client system, using Salesforce connectors in MuleSoft.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="right">
+                        <img class="work_img" src="img/LTI.jpg" width="250" height="180" />
+                        <div class="timeline">
+                            <div class="outer">
+                                <div class="card">
+                                    <div class="info">
+                                        <h3 class="work_title">Software Engineer</h3>
+                                        <p class="compname">Victoria Secrets (Feb 2021 - Oct 2021)</p>
+                                        <p class="edu_para">Integrated MuleSoft applications to streamline processes and create
+                                            instant API
+                                            connectivity between the customer service software applications so that the data
+                                            flow would be seamless between them. </p>
+                                        <p class="edu_para">Created the domain project as the deployment was on-premises and
+                                            developed the
+                                            business process flows as per API-led architecture using Anypoint studio and Mule
+                                            Runtime 3.9, deployed the applications on Jenkins, and managed API security using
+                                            API Manager.</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="info">
+                                        <h3 class="work_title">Graduate Engineer Trainee (GET- 1)</h3>
+                                        <p class="compname">Clarios (August 2019 - January 2021)</p>
+                                        <p class="edu_para">Migrated client's existing legacy applications to MuleSoft by
+                                            designing and
+                                            developing APIs as per the API-led architecture using the Anypoint Platform, Studio,
+                                            and Mule Runtime 4.3. </p>
+                                        <p class="edu_para">Generated API specifications using RAML in Anypoint Platform and
+                                            developed the
+                                            business process flows using various connectors (Salesforce, SAP, Batch module,
+                                            HTTP, MQ) alongside implemented data transformation using Data weave and error
+                                            handling in Anypoint Studio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
         <section id="projects" class="content-section">
             <div class="section-heading">
                 <h1>Recent Projects</h1>
@@ -176,9 +249,9 @@
                             <img src="img/Java_logo.png" class="proj_img" alt="AED_Project">
                             <div class="container">
                                 <h2 class="heading">AED Final Project</h2>
-                                <p>Semester 1 (Fall 2022)</p>
+                                <p class="edu_para">Semester 1 (Fall 2022)</p>
                                 <p class="title">Northeastern University, Boston</p>
-                                <p>Topic: Boston Aid Social System (BASS)</p>
+                                <p class="edu_para">Topic: Boston Aid Social System (BASS)</p>
                                 <a href="https://github.com/patil-pus/Final_AED">
                                     <b>
                                         <p><button class="button">Source Code</button></p>
@@ -193,9 +266,9 @@
                             <img src="img/sql_logo.jpg" class="proj_img1" alt="DMDD_Project">
                             <div class="container">
                                 <h2 class="heading">DMDD Final Project</h2>
-                                <p>Semester 1 (Fall 2022)</p>
+                                <p class="edu_para">Semester 1 (Fall 2022)</p>
                                 <p class="title">Northeastern University, Boston</p>
-                                <p>Topic: Event Management System</p>
+                                <p class="edu_para">Topic: Event Management System</p>
                                 <a href="https://github.com/Atharvaa97/DMDD-Project-Group-19">
                                     <b>
                                         <p><button class="button">Source Code</button></p>
@@ -210,9 +283,9 @@
                             <img src="img/android-logo.png" class="proj_img1" alt="BE_Project">
                             <div class="container">
                                 <h2 class="heading">BE Project</h2>
-                                <p>Final year (2019)</p>
+                                <p class="edu_para">Final year (2019)</p>
                                 <p class="title">St. Francis Institute of Technology, Mumbai</p>
-                                <p>Topic: MedTracker</p>
+                                <p class="edu_para">Topic: MedTracker</p>
                                 <a href="https://github.com/Atharvaa97/DMDD-Project-Group-19">
                                     <b>
                                         <p><button class="button">Source Code</button></p>
@@ -272,43 +345,49 @@
                 <div class="section-heading">
                     <h1>Get in touch!<br></h1>
                     </div>
-                <iframe class="googlemap"
+                    <div id="contactme">
+                        <div id="left">
+                            <iframe class="googlemap"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5898.780899162725!2d-71.10916042306496!3d42.334198216754416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379890fad9993%3A0xd7f2c4e05f88e13c!2sJ%20Vue%20at%20the%20LMA%20Apartments!5e0!3m2!1sen!2sus!4v1674543629820!5m2!1sen!2sus"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="475" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="section-content">
-                    <form>
-                        <div class="row">
-                            <div class="col-25">
-                                <b><label for="fname">First Name:</label></b>
-                            </div>
-                            <div class="col-75">
-                                <input type="text" id="fname" name="firstname" placeholder="Enter your name.." />
-                                </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-25">
-                                        <b><label for="lname">Last Name:</label></b>
-                                    </div>
-                                    <div class="col-75">
-                                <input type="text" id="lname" name="lastname" placeholder="Enter your last name.." />
-                                </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-25">
-                                        <b><label for="address">Subject:</label></b>
-                                    </div>
-                                    <div class="col-85">
-                                <textarea id="address" name="Uaddress" placeholder="Enter Subject" style="height: 200px"></textarea>
-                                </div>
-                                </div>
-                                <br />
-                                <br />
-                                <div class="row">
-                                    <input type="submit" value="Submit" />
-                                </div>
+                        </div>
+                        <div id="right">
+                            <div class="section-content">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <p class="form_style" for="fname">First Name:</p>
+                                            </div>
+                                            <div class="col-75">
+                                                <input type="text" id="fname" name="firstname" placeholder="Enter your name.." />
+                                            </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <p class="form_style" for="lname">Last Name:</p>
+                                                    </div>
+                                                    <div class="col-75">
+                                                        <input type="text" id="lname" name="lastname" placeholder="Enter your last name.." />
+                                                    </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-25">
+                                                    <p class="form_style" for="address">Subject:</p>
+                                                    </div>
+                                                    <div class="col-85">
+                                                        <textarea id="address" name="Uaddress" placeholder="Enter Subject" style="height: 200px"></textarea>
+                                                    </div>
+                                                    </div>
+                                                    <br />
+                                                    <br />
+                                                    <div class="row">
+                                                        <input type="submit" value="Submit" />
+                                                    </div>
                                 </form>
-                </div>
+                            </div>
+                        </div>
+                        </div>
                 </div>
         </section>
         <section class="footer">
