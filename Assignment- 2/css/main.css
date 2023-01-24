@@ -3,19 +3,22 @@ select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
   resize: vertical;
+  background-color: grey;
+  margin-left: -160px;
+  
 }
 
 label {
-  padding: 18px 2px 14px 180px;
+  padding: 8px 2px 14px 1px;
   display: inline-block;
 }
 
 input[type="submit"] {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: BLACK;
   padding: 12px 20px;
   margin-left: 50%;
   text-align: center;
@@ -25,14 +28,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: red;
+  background-color: black;
+  color: white;
 }
 
 .col-25 {
   float: left;
   width: 25%;
   font-size: 18px;
-  margin-left: 11%;
+  margin-left: 1px;
   margin-top: 6px;
 }
 
@@ -40,11 +44,12 @@ input[type="submit"]:hover {
   float: left;
   width: 38%;
   margin-top: 6px;
+  
 }
 
 .col-85 {
   float: left;
-  width: 36%;
+  width: 39%;
   margin-top: 6px;
 }
 
@@ -66,44 +71,30 @@ input[type="submit"]:hover {
   .gallery_merch img {
     width: 415px;
     height: 305px;
+    margin-left: 330px;
   }
 
 
-#container2 {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  }
-
-  .gallery_projects {
-    float: left;
-    padding: 10px;
-    margin: 53px;
-  }
-  
-  .gallery_projects img {
-    margin-left: 40px;
-    width: 200px;
-    height: 200px;
-  }
-
-
-
-  /* Gallery Styling for Projects */
+  /* Certification Gallery Styling for Projects */
 
 div.gallery {
-    border: 1px solid grey;
+    border: 1px solid black;
+    background-color: #000;
+    padding-top: 15px;
+
 }
 div.gallery:hover {
-    border: 1px solid black;
+    border: 1px solid white;
+    opacity: 0.4;
 }
 div.gallery img {
-    width: 60%;
+    width: 45%;
     height: auto;
 }
 div.desc {
     padding: 15px;
-    text-align: right;
+    text-align: center;
+    color: whitesmoke;
 }
 * {
     box-sizing: border-box;
@@ -131,3 +122,210 @@ div.desc {
 }
 
 
+
+/* Styling for Projects */
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.heading {
+  color: white;
+}
+
+.card {
+  margin: 10px;
+  background-color: #000;
+  padding-top: 20px;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: black;
+  background-color: rgba(27, 197, 194, 0.826); 
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+}
+
+.button:hover
+ {
+ background-color: #5d5f5e;
+ color: black;
+}
+
+.proj_img{
+  width: 35%;
+  height: auto;
+}
+
+
+.proj_img1{
+  width: 35%;
+  height: 174px;
+}
+
+
+.googlemap{
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  margin: 0;
+  padding-right: 24px;
+   background: #313131;
+  display: inline-block;
+   height: 42px;
+  line-height: 42px;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.bars {
+	width: 35%;
+	float: left;
+	padding: 0;
+	text-align: left;
+}
+.bars .skills {
+  	margin-top: 36px;
+   list-style: none;
+}
+.bars li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #ccc;
+  	height: 42px;
+  	border-radius: 3px;
+    box-shadow: 1px 2px 6px 0 rgba(27, 197, 194, 0.826);
+}
+.bars li em {
+	font: 15px 'opensans-bold', sans-serif;
+  color: white;
+	text-transform: uppercase;
+  letter-spacing: 2px;
+	font-weight: normal;
+  position: relative;
+	top: -36px;
+}
+.bar-expand {
+   position: absolute;
+   left: 0;
+   top: 0;
+
+   margin: 0;
+   padding-right: 24px;
+  	background: black;
+   display: inline-block;
+  	height: 42px;
+   line-height: 42px;
+   border-radius: 3px 0 0 3px;
+}
+
+.bars1 {
+	width: 50%;
+	float: left;
+	padding-left: 210px;
+	text-align: left;
+}
+.bars1 .skills {
+  	margin-top: 36px;
+   list-style: none;
+}
+.bars1 li {
+   position: relative;
+  	margin-bottom: 60px;
+  	background: #ccc;
+  	height: 42px;
+  	border-radius: 3px;
+    box-shadow: 1px 2px 6px 0 rgba(27, 197, 194, 0.826);
+}
+.bars1 li em {
+	font: 15px 'opensans-bold', sans-serif;
+  color: white;
+	text-transform: uppercase;
+  letter-spacing: 2px;
+	font-weight: normal;
+  position: relative;
+	top: -36px;
+  margin-left: -20px;
+}
+
+.row .nine        
+{ 
+  width: 75%;
+ }
+
+
+.MuleSoft {
+  width: 85%;
+  -moz-animation: photoshop 2s ease;
+  -webkit-animation: photoshop 2s ease;
+}
+.HTML {
+  width: 80%;
+  -moz-animation: illustrator 2s ease;
+  -webkit-animation: illustrator 2s ease;
+}
+.CSS {
+  width: 75%;
+  -moz-animation: wordpress 2s ease;
+  -webkit-animation: wordpress 2s ease;
+}
+.Javascript {
+  width: 60%;
+  -moz-animation: css 2s ease;
+  -webkit-animation: css 2s ease;
+}
+.Java {
+  width: 50%;
+  -moz-animation: html5 2s ease;
+  -webkit-animation: html5 2s ease;
+}
+.Angular {
+  width: 30%;
+  -moz-animation: jquery 2s ease;
+  -webkit-animation: jquery 2s ease;
+}
