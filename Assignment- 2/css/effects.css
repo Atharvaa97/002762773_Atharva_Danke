@@ -1,17 +1,34 @@
 /* Timeline Container */
-.timeline {
+.timeline, .timeline2 {
   background: var(--primary-color);
   margin: 20px auto;
   padding: 20px;
 }
 
 /* Outer Layer with the timeline border */
-.outer {
+.outer, .outer2 {
   border-left: 2px solid #333;
 }
 
 /* Card container */
-.card {
+.card, .card2 {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+
+.certificates{
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+.card3 {
   position: relative;
   margin: 0 0 20px 20px;
   padding: 10px;
@@ -22,7 +39,7 @@
 }
 
 /* Information about the timeline */
-.info {
+.info, .info2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -58,9 +75,9 @@ overflow: hidden;
 text-overflow: clip;
 }
 
-.work_img{
+.work_img, .work_img1 {
     margin-left: -20px;
-}
+  }
 
 .compname{
 font-size: 20px;
