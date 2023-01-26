@@ -11,7 +11,7 @@
 }
 
 /* Card container */
-.card, .card2 {
+.card {
   position: relative;
   margin: 0 0 20px 20px;
   padding: 10px;
@@ -21,6 +21,15 @@
   max-width: 400px;
 }
 
+.card2 {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  color: gray;
+  border-radius: 8px;
+  max-width: 600px;
+}
 
 .certificates{
     padding: 0 6px;
@@ -49,6 +58,7 @@
 .work_title {
   color: #bdeee6;
   position: relative;
+  font-size: 22px;
 }
 
 /* Timeline dot  */
@@ -76,7 +86,7 @@ text-overflow: clip;
 }
 
 .work_img, .work_img1 {
-    margin-left: -20px;
+    margin-left: 10px;
   }
 
 .compname{

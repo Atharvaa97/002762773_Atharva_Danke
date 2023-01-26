@@ -1,341 +1,545 @@
-/* Responsive Section*/
-
+/* Id Responsive Section*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #home, #skills, #education, #workexp, #projects, #certifications, #contct
-  {
-    margin-left: 80px;
+  #home,
+  #skills,
+  #education,
+  #workexp,
+  #projects,
+  #certifications,
+  #contct {
+    margin-left: 10px;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
   }
 }
 
-/* Navigation bar Section*/
-
-@media only screen and (max-width: 768px) {
-  .resp {
-    width: 100%;
-    height: auto;
+@media (width: 360px) {
+  #home,
+  #skills,
+  #education,
+  #workexp,
+  #projects,
+  #certifications,
+  #contct {
+    margin-left: 4px;
+  }
+  .section-heading h1 {
+    font-size: 20px;
+    margin-top: -30px;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
   }
 }
 
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 50%;
-        margin: 6px 0;
-    }
-}
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
-    }
-}
+/* Nav Section for width 360px and 768px */
 
-
-/* Skills Section*/
-
-
-@media only screen and (max-width: 768px) {
-  .bars1 li {
-      width: 190%;
-  }
-}
-
-  /* Home Section*/
-
-  @media (max-width: 768px) {
-    .intro img
-    {
-      margin-left: 15px;
-      width: 200px;
-      height: 200px;
-    }
-    .intro-heading
-    {
-      margin-left: 100px;
-    }
-
-    .ftitle
-    {
-      margin-top: 10px;
-      margin-left: 40px;
-      font-size: 25px;
-    }
-    .mtitle, .resume_button
-    {
-      margin-top: 10px;
-      margin-left: 1px;
-      font-size: 15px;
-    }
-    .para{
-      font-size: 20px;
-      margin-top: -20px;
-    }
-  }
-
-
-
-
-  /* Responsive Style */
-
-@media (max-width: 992px) {
-
+@media (width: 360px) {
   .responsive-nav {
     display: none;
   }
 
+  .sidebar-navigation {
+    width: 60px;
+  }
+
   .sidebar-navigation .logo a {
-    font-size: 18px;
+    font-size: 10px;
+    padding-top: 10px;
   }
 
   .sidebar-navigation nav a {
-    font-size: 13px;
+    font-size: 8px;
   }
 
   .sidebar-navigation nav ul {
-    margin-left: 30px;
+    margin-left: 1px;
+  }
+  .sidebar-navigation nav {
+    position: relative;
+    top: 49%;
+  }
+  .resp {
+    width: 50px;
+    height: 60px;
+    margin: 6px 0;
+  }
+  .circle {
+    margin-right: 5px;
+    height: 10px;
+    width: 10px;
+    left: 0px;
+    top: -1px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: all 0.3s;
+  }
+}
+
+@media (width: 768px) {
+  .resp {
+    width: 100%;
+    height: auto;
+  }
+  .responsive-nav {
+    display: none;
   }
 
-  .sidebar-navigation .social-icons li a {
+  .sidebar-navigation {
+    width: 125px;
+  }
+
+  .sidebar-navigation .logo a {
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .sidebar-navigation nav a {
+    font-size: 14px;
+  }
+
+  .sidebar-navigation nav ul {
+    margin-left: 1px;
+  }
+  .sidebar-navigation nav {
+    position: relative;
+    top: 40%;
+  }
+}
+
+/* Home Section for width 360px and 768px */
+
+@media (width: 360px) {
+  .intro img {
+    margin-left: -70px;
+    margin-right: 1px;
+    width: 100px;
+    height: 100px;
+  }
+  .intro-heading {
+    margin-left: 50px;
+    font-size: 18px;
+  }
+
+  .ftitle {
+    margin-top: 70px;
+    margin-left: -210px;
+    font-size: 16px;
+  }
+  .mtitle,
+  .resume_button {
+    margin-top: 5px;
+    margin-left: -590px;
+    font-size: 10px;
+  }
+  .resume_button {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .para {
+    font-size: 10px;
+    width: 30%;
+    margin-left: 25px;
+  }
+
+  .container {
+    font-size: 20px;
+  }
+  .float-container {
+    font-size: 20px;
+    margin-right: -390px;
+  }
+}
+
+@media (width: 768px) {
+  .intro img {
+    margin-left: -35px;
+    width: 200px;
+    height: 200px;
+  }
+  .intro-heading {
+    margin-left: 100px;
+  }
+  .ftitle {
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 25px;
+  }
+  .mtitle,
+  .resume_button {
+    margin-top: 10px;
+    margin-left: 1px;
     font-size: 15px;
   }
-
-}
-
-@media (max-width: 355px) {
-
-  .section-heading p {
-    position: relative;
-  }
-
-  #home {
-    padding-left: 98px;
-    padding-right: 15px;
-  }
-
-
-  #projects {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #workexp {
-    padding-left: 98px;
-    padding-right: 15px;
-  }
-
-  #certifications {
-    padding-left: 15px;
-    margin-left: 55px;
-  }
-
-
-  #contact-content {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  #contct {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: -50px;
+  .para {
+    font-size: 16px;
+    margin-top: -20px;
+    margin-bottom: 30px;
   }
 }
 
+/* Skills Section for width 360px and 768px */
 
-/* Certification Section */
-
-@media (max-width: 360px) {
-
-  .certificates{
-    padding: 0 6px;
-    float: left;
-    width: 25%;
-    margin-left: 540px;
+@media (width: 360px) {
+  .bars,
+  .bars li {
+    width: 100px;
+    height: 20px;
+    margin-left: 25px;
+  }
+  .bar-expand {
+    height: 20px;
+  }
+  .bars1 li {
+    width: 100px;
+    margin-left: 60px;
+    height: 20px;
+  }
+  .bars1 {
+    margin-left: -190px;
+    margin-top: 240px;
+  }
+  .bars1 li em,
+  .bars li em {
+    font-size: 10px;
+  }
 }
+
+@media (width: 768px) {
+  .bars1 li {
+    width: 190%;
+    height: 30px;
+  }
+  .bars li {
+    height: 30px;
+  }
+  .bar-expand {
+    height: 30px;
+  }
+  .bars1 {
+    margin-left: -60px;
+  }
 }
 
-@media (max-width: 768px) {
+/* Education Section for width 360px and 768px  */
 
-  .certificates{
-    width: 55%;
-    margin-left: 210px;
-}
-}
-
-
-/* Education Section */
-
-
-@media (max-width: 360px) {
-
-  #education{
+@media (width: 360px) {
+  #education {
     font-size: 12px;
   }
-  .ed_details { 
-    font-size: 10px; 
-  }
-  .edu_img1 { 
-    width: 60px; 
-    height: 65px; 
+  .ed_details {
+    font-size: 10px;
     margin-left: 10px;
   }
-  .edu_img { 
-    width: 140px; 
-    height: 60px; 
+  .edu_img1 {
+    width: 60px;
+    height: 65px;
     margin-left: 10px;
   }
-  .child { 
-    margin-left: 60px;
+  .edu_img {
+    width: 150px;
+    height: 60px;
+    margin-left: 15px;
+  }
+  .child {
+    margin-left: -40px;
     float: left;
   }
-  .child1 { 
-    margin-right: 368px;
+  .child1 {
+    margin-right: 472px;
     float: right;
   }
-  .edu_para { 
-    font-size: 12px; 
+  .edu_para {
+    font-size: 12px;
+    margin-left: 20px;
   }
-  .ed_title { 
-  font-size: 15px; 
-  width:10px;
-  margin-left: -5px;
+  .ed_title {
+    font-size: 11px;
+    width: 10px;
+    margin-left: 1px;
   }
 }
 
-
-@media (max-width: 768px) {
-
-  .ed_details { 
-    font-size: 15px; 
-    margin-left: -40px;
+@media (width: 768px) {
+  .ed_details {
+    font-size: 15px;
+    margin-left: 1px;
   }
-  .edu_img1 { 
-    width: 70px; 
-    height: 85px; 
+  .edu_img1 {
+    width: 90px;
+    height: 85px;
     margin-left: 5px;
   }
-  .edu_img { 
-    width: 160px; 
-    height: 80px; 
-    margin-left: 5px;
+  .edu_img {
+    width: 190px;
+    height: 80px;
+    margin-left: -10px;
   }
-  .child { 
+  .child {
     margin-left: 5px;
     float: left;
   }
-  .child1 { 
+  .child1 {
     margin-top: 5px;
     margin-left: 5px;
     float: right;
   }
-  .edu_para { 
-    font-size: 18px;
-    margin-left: -20px; 
+  .edu_para {
+    font-size: 14px;
+    margin-left: -20px;
   }
-  .ed_title { 
-  font-size: 16px; 
-  width:10px;
-  margin-left: -55px;
+  .ed_title {
+    font-size: 14px;
+    width: 10px;
+    margin-left: -55px;
   }
 }
 
+/* Work Experience Section for width 360px and 768px */
 
-
-/* Work Experience Section */
-
-@media (max-width: 360px) {
-  .work_title{
+@media (width: 360px) {
+  .work_title {
+    font-size: 12px;
+    margin-left: 9px;
+  }
+  .timeline {
+    margin-left: -30px;
+    margin-right: 5px;
+    float: left;
+  }
+  .timeline2 {
+    float: left;
+    margin-left: -20px;
+  }
+  .compname {
     font-size: 12px;
   }
-  .timeline { 
-    margin-left: -40px;
-    float: left;
+  .work_img1 {
+    width: 55px;
+    height: 44px;
+    margin-left: 40px;
   }
-  .timeline2 { 
-    float: left;
-    margin-left: 35px;
+  .proj_img1 {
+    width: 60px;
+    height: 68px;
+    margin-left: 5px;
   }
-  .compname{
-    font-size: 15px;
-  }
-  .work_img{
-    width: 80px; 
-    height: 50px; 
+  .work_img {
+    width: 90px;
+    height: 45px;
     margin-left: 10px;
   }
-  .work_img1{
-    width: 80px; 
-    height: 60px; 
-    margin-left: 60px;
-  }
-  .card2{
-    margin-left: 1px;
-  }
-  .work_para{
+  .work_para {
     font-size: 12px;
   }
-}
-
-
-@media (max-width: 768px) {
-  .work_img1{
-    width: 80px; 
-    height: 68px; 
-    margin-left: 20px;
+  .card,
+  .card2 {
+    width: 120px;
+    margin-left: 10px;
   }
-  .work_img{
-    width: 140px; 
-    height: 68px; 
-    margin-left: 20px;
+  .heading {
+    font-size: 15px;
   }
 }
 
+@media (width: 768px) {
+  .work_img1 {
+    width: 80px;
+    height: 58px;
+    margin-left: 10px;
+  }
+  .work_img {
+    width: 140px;
+    height: 68px;
+    margin-left: -10px;
+  }
+  .card2 {
+    width: 240px;
+    margin-left: 10px;
+  }
+  .heading {
+    font-size: 15px;
+  }
+  .timeline {
+    margin-left: -40px;
+    margin-right: 5px;
+    float: left;
+  }
+  .timeline2 {
+    float: left;
+    margin-left: -30px;
+  }
+  .work_title {
+    font-size: 18px;
+    margin-left: 9px;
+  }
+  .compname {
+    font-size: 15px;
+  }
+  .work_para {
+    font-size: 12.5px;
+  }
+}
 
-/* Projects Section */
+/* Projects Section for width 360px and 768px */
 
+@media (width: 360px) {
+  .column {
+    width: 160%;
+    margin-left: 10px;
+  }
+  .Contct_form {
+    margin-left: 150px;
+  }
+  .card {
+    width: 55%;
+    margin-left: 10px;
+  }
+  .proj_img1 {
+    height: 80px;
+  }
+  .proj_img {
+    height: 80px;
+  }
+}
 
-@media (max-width: 768px) {
-  .column{
+@media (width: 768px) {
+  .column {
     width: 60%;
     margin-left: 180px;
   }
-  .Contct_form{
+  .Contct_form {
     margin-left: 150px;
+  }
+  .card {
+    width: 90%;
+    margin-left: -40px;
+  }
+  .proj_img1 {
+    height: 120px;
+  }
+  .proj_img {
+    height: 120px;
   }
 }
 
+/* Certification Section for width 360px and 768px  */
 
-
-/* Contact Section */
-
-
-@media (max-width: 360px) {
-  .googlemap{
-    margin-left: 120px;
-    width: 200px;
-    height: 200px;
+@media (width: 360px) {
+  .certificates {
+    width: 75%;
+    margin-left: 40px;
+    margin-bottom: 10px;
   }
-  .Contct_form{
-    margin-left: 150px;
+  .desc {
+    font-size: 12px;
+  }
+  div.gallery {
+    height: 170px;
   }
 }
 
-@media (max-width: 768px) {
-  .googlemap{
-    margin-left: -10px;
+@media (width: 768px) {
+  .certificates {
+    width: 45%;
+    margin-left: 160px;
+    margin-bottom: 20px;
+  }
+  .desc {
+    font-size: 15px;
+  }
+}
+
+/* Contact Section for width 360px and 768px */
+
+@media (width: 360px) {
+  .googlemap {
+    margin-left: 1px;
     width: 250px;
     height: 250px;
   }
-  .Contct_form{
+  .Contct_form {
     margin-left: 180px;
   }
-  .form_style{
-    margin-left: -280px;
+  .form_style {
+    margin-left: -145px;
+    margin-top: -8px;
   }
-  .col-85, .col-75
-  {
-    margin-left: -95px
+  .col-85,
+  .col-75 {
+    margin-left: -95px;
   }
-  input[type="text"], select, textarea {
-    width: 300px;
+  input[type="text"],
+  select,
+  textarea {
+    width: 190px;
+    height: 33px;
+    margin-left: 10px;
+  }
+  .Contct_form {
+    margin-top: 300px;
+    margin-left: 1px;
+  }
+  input[type="submit"] {
+    width: 100px;
+    margin-left: 29px;
+    margin-top: -10px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .section-heading p {
+    font-size: 12px;
+  }
 }
+
+@media (width: 768px) {
+  .googlemap {
+    margin-left: 115px;
+    width: 300px;
+    height: 280px;
+  }
+  .form_style {
+    margin-left: -280px;
+    margin-top: -1px;
+  }
+  .col-85,
+  .col-75 {
+    margin-left: -95px;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 300px;
+    margin-left: -100px;
+  }
+  .Contct_form {
+    margin-top: 300px;
+    margin-left: 1px;
+  }
+  input[type="submit"] {
+    width: 100px;
+    margin-left: 65px;
+  }
+}
+
+/* Tel Button */
+
+@media (max-width: 768px) {
+  .btn {
+    width: 60%;
+    margin-left: -20px;
+    margin-top: -500px;
+    margin-right: 20px;
+  }
 }

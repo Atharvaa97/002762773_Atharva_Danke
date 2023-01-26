@@ -247,7 +247,7 @@ header {
   color: #fff;
   margin-top: 5px;
   text-decoration: none!important;
-  font-size: 15px;
+  font-size: 20px;
   letter-spacing: 0.5px;
   text-transform: capitalize;
 }
@@ -276,35 +276,6 @@ header {
 }
 .sidebar-navigation nav .active-section .circle{
   background-color: #fff;
-}
-
-.sidebar-navigation .social-icons {
-  position: absolute;
-  width: 100%;  
-  bottom: 10px;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.sidebar-navigation .social-icons li {
-  display: inline-block;
-  margin-right: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.sidebar-navigation .social-icons li:last-child {
-  margin-right: 0px;
-}
-
-.sidebar-navigation .social-icons li a {
-  font-size: 18px;
-  color: #fff;
-  transition: all 0.5s;
-}
-
-.sidebar-navigation .social-icons li a:hover {
-  color: #45489a;
 }
 
 /* Contact Section Style */
