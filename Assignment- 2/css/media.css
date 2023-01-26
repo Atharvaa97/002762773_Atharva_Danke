@@ -70,7 +70,7 @@
     top: 49%;
   }
   .resp {
-    width: 50px;
+    width: 60px;
     height: 60px;
     margin: 6px 0;
   }
@@ -114,7 +114,7 @@
   }
   .sidebar-navigation nav {
     position: relative;
-    top: 40%;
+    top: 51%;
   }
 }
 
@@ -133,24 +133,25 @@
   }
 
   .ftitle {
-    margin-top: 70px;
-    margin-left: -210px;
+    margin-top: 130px;
+    margin-left: -185px;
     font-size: 16px;
   }
-  .mtitle,
-  .resume_button {
-    margin-top: 5px;
-    margin-left: -590px;
+  .mtitle {
+    margin-top: -15px;
+    margin-left: -540px;
     font-size: 10px;
   }
   .resume_button {
     font-size: 10px;
+    margin-left: -540px;
     padding: 10px;
+    margin-top: -200px;
   }
   .para {
     font-size: 10px;
-    width: 30%;
-    margin-left: 25px;
+    width: 100%;
+    margin-left: 10px;
   }
 
   .container {
@@ -159,6 +160,22 @@
   .float-container {
     font-size: 20px;
     margin-right: -390px;
+  }
+  .home_button {
+    margin-left: -64px;
+    margin-top: -65px;
+    padding: 1px;
+  }
+  .btn {
+    width: 5px;
+    height: 5px;
+    margin: 2px;
+    outline: none;
+    border: none;
+    background: #d6d6d6;
+    border-radius: 50%;
+    transition: 0.2;
+    font-size: 15px;
   }
 }
 
@@ -186,6 +203,10 @@
     font-size: 16px;
     margin-top: -20px;
     margin-bottom: 30px;
+  }
+  .home_button {
+    margin-left: -30px;
+    margin-top: -60px;
   }
 }
 
@@ -222,6 +243,7 @@
     height: 30px;
   }
   .bars li {
+    width: 78%;
     height: 30px;
   }
   .bar-expand {
@@ -229,6 +251,9 @@
   }
   .bars1 {
     margin-left: -60px;
+  }
+  .bars {
+    margin-left: 10px;
   }
 }
 
@@ -356,7 +381,7 @@
 @media (width: 768px) {
   .work_img1 {
     width: 80px;
-    height: 58px;
+    height: 68px;
     margin-left: 10px;
   }
   .work_img {
@@ -473,8 +498,9 @@
     margin-left: 180px;
   }
   .form_style {
-    margin-left: -145px;
-    margin-top: -8px;
+    margin-left: -235px;
+    margin-top: 1px;
+    font-size: 16px;
   }
   .col-85,
   .col-75 {
@@ -510,8 +536,8 @@
     height: 280px;
   }
   .form_style {
-    margin-left: -280px;
-    margin-top: -1px;
+    margin-left: -550px;
+    margin-top: 6px;
   }
   .col-85,
   .col-75 {
@@ -521,7 +547,7 @@
   select,
   textarea {
     width: 300px;
-    margin-left: -100px;
+    margin-left: -142px;
   }
   .Contct_form {
     margin-top: 300px;
@@ -529,17 +555,30 @@
   }
   input[type="submit"] {
     width: 100px;
-    margin-left: 65px;
+    margin-left: -85px;
   }
 }
 
 /* Tel Button */
 
-@media (max-width: 768px) {
-  .btn {
+@media (width: 360px) {
+  .footer_buttons {
+    font-size: 20px;
+    padding: 5px;
     width: 60%;
-    margin-left: -20px;
-    margin-top: -500px;
-    margin-right: 20px;
+    margin-left: 130px;
+    margin-top: -45px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (width: 768px) {
+  .footer_buttons {
+    font-size: 20px;
+    padding: 5px;
+    width: 60%;
+    margin-left: 185px;
+    margin-top: -58px;
+    margin-bottom: 25px;
   }
 }
