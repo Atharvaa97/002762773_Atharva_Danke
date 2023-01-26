@@ -64,9 +64,29 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #bdeee6;
   position: relative;
-  margin-left: -400px;
+  margin-left: 22px;
   margin-top: -28px;
   margin-bottom: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #bdeee6;
+  animation: cursor 3s step-start infinite, text 3s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+  0%,
+  10% {
+    border-color: #212121;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 16ch;
+  }
 }
 
 .para {
@@ -462,7 +482,7 @@ div.gallery img {
   width: 45%;
   height: auto;
 }
-div.desc {
+.desc {
   padding: 15px;
   text-align: center;
   color: whitesmoke;

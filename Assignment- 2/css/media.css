@@ -139,7 +139,7 @@
   }
   .mtitle {
     margin-top: -15px;
-    margin-left: -540px;
+    margin-left: -180px;
     font-size: 10px;
   }
   .resume_button {
@@ -193,7 +193,12 @@
     margin-left: 40px;
     font-size: 25px;
   }
-  .mtitle,
+  .mtitle {
+    margin-top: -15px;
+    margin-left: 52px;
+    font-size: 15px;
+  }
+
   .resume_button {
     margin-top: 10px;
     margin-left: 1px;
@@ -471,7 +476,7 @@
     font-size: 12px;
   }
   div.gallery {
-    height: 170px;
+    height: 160px;
   }
 }
 
@@ -483,6 +488,9 @@
   }
   .desc {
     font-size: 15px;
+  }
+  div.gallery {
+    height: 200px;
   }
 }
 
