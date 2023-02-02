@@ -57,6 +57,19 @@ function deleteButton(rowdata) {
     rowdata.nextElementSibling.remove();
     rowdata.remove();
     alert("Record of student deleted successfully..!!");
+
+    let checkValues = document.querySelectorAll("input[type=checkbox]");
+    let check = false;
+    checkValues.forEach((values) => {
+      if (values.checked) check = true;
+    });
+    if (check) {
+      document.getElementById("button").style.backgroundColor = "orange";
+      document.getElementById("button").disabled = false;
+    } else {
+      document.getElementById("button").style.backgroundColor = "";
+      document.getElementById("button").disabled = true;
+    }
   });
 
   return deleteDataButton;
@@ -133,15 +146,26 @@ function addStudentButton() {
   let data = document.querySelector("#myTable tbody");
   let record1 = data1.cloneNode(true);
   let record2 = data2.cloneNode(true);
-  let count = document.querySelectorAll("input[type=checkbox]").length;
-  count++;
+
+  var rows = document.getElementById("myTable").rows;
+  var latestIndex;
+  if (rows.length > 1) {
+    latestIndex =
+      parseInt(
+        rows[
+          rows.length - 2
+        ].firstElementChild.nextElementSibling.innerHTML.split(" ")[1]
+      ) + 1;
+  } else {
+    latestIndex = 1;
+  }
   let newStudentRow = record1.querySelectorAll("td");
-  newStudentRow[1].innerHTML = `Student ${count}`;
-  newStudentRow[2].innerHTML = `Teacher ${count}`;
+  newStudentRow[1].innerHTML = `Student ${latestIndex}`;
+  newStudentRow[2].innerHTML = `Teacher ${latestIndex}`;
   newStudentRow[6].innerHTML = `${Math.floor(Math.random() * 100000 + 1)}`;
   let checkBoxData = record1.querySelector("input[type=checkbox]");
   addCheckboxValues(checkBoxData);
   data.appendChild(record1);
   data.appendChild(record2);
-  alert("Record of new student added successfully..!!");
+  alert("Record of new student added successfully!");
 }
