@@ -1,0 +1,39 @@
+label {
+    float: left;
+    width: 150px;
+  }
+
+  #container {
+    width: 700px;
+    margin: auto;
+    background-color: beige;
+  }
+
+  main {
+    padding: 50px;
+  }
+
+  table {
+    display: none;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+
+  th{
+    background-color:  #4f4b4b ;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: beige;
+  }
+ 
+  #drinks{
+    width: 170px;
+  }

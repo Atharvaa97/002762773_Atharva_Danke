@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <main>
+      <h2>Feeback</h2>
+      <h3>Love something? Hate something? Let us know!</h3>
+      Note : Fields marked with an asterisk(*) are mandatory
+      <br /><br />
+      <form id="myForm" method="post">
+        <label>Title*:</label>
+        <input type="radio" name="title" id="miss" value="miss" required="required" />Miss
+        <input type="radio" name="title" id="mr" value="mr" required="required" />Mr.
+        <input type="radio" name="title" id="mrs" value="mrs" required="required" />Mrs. <br /><br />
+        <label for="firstName">First Name*:</label>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required="required" />
+        <br /><br />
+        <div id="error_firstName" style="display: none; color: red">
+          Invalid input for the First Name field. Only text are allowed.
+          <br /><br />
+        </div>
+
+        <label for="lastName">Last Name*:</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required="required" />
+        <br /><br />
+
+        <label for="emailId">Email Id*:</label>
+        <input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" required="required" />
+        <br /><br />
+        <div id="error_emailId" style="display: none; color: red">
+          Invalid input for the Email Id field. Please enter valid email id.
+          <br /><br />
+        </div>
+        <label for="phoneNumber">Phone Number*:</label>
+        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" required="required" />
+        <br /><br />
+        <div id="error_phoneNumber" style="display: none; color: red">
+          Invalid input for the Phone Number field. Please enter valid phone
+          number.
+          <br /><br />
+        </div>
+
+        <label for="streetAddress1">Street Address 1*:</label>
+        <input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" required="required" />
+        <br /><br />
+
+        <label for="streetAddress2">Street Address 2:</label>
+        <input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+        <br /><br />
+
+        <label for="city">City*:</label>
+        <input type="text" name="city" id="city" placeholder="city" required="required" />
+        <br /><br />
+
+        <label for="state">State*:</label>
+        <input type="text" name="state" id="state" placeholder="state" required="required" />
+        <br /><br />
+
+        <label for="zipcode">ZipCode*:</label>
+        <input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required="required" />
+        <br /><br />
+        <div id="error_zipcode" style="display: none; color: red">
+          Invalid input for the Zipcode field. Please enter valid email id.
+          <br /><br />
+        </div>
+        <br />
+        <label for="rests">Which NUFlix membership are you planning to take?* </label>
+        <select id="drinks" required>
+          <option value="">Select</option>
+          <option value="FlixPlus">FlixPlus</option>
+          <option value="FlixLight">FlixLight</option>
+          <option value="FlixFam">FlixFam</option>
+          <option value="FlixDay">FlixDay</option>
+          <option value="FlixMulti">FlixMulti</option>
+        </select>
+
+        <br /><br /><br />
+        <br />
+
+        <div class="box" style="display: none">
+          <label for="hear1">Select any one item*:</label>
+          <div>
+            <br /><input type="radio" name="source1" value="Premium-3months" id="Premium1" onclick="textNew()" />
+            Premium- (3 months): $30/month
+          </div>
+          <div>
+            <input type="radio" name="source1" value="Premium-6months" id="Premium2" onclick="textNew()" />
+            Premium- (6 months):: $25/month
+          </div>
+          <div>
+            <input type="radio" name="source1" value="Premium-12months" id="Premium3" onclick="textNew()" />
+            Premium- (12 months): $20/month
+          </div>
+          <br />
+        </div>
+
+        <div class="box2" style="display: none">
+          <label for="hear1">Select any one item*:</label>
+          <div>
+            <br /><input type="radio" name="source1" value="Adsupported-1month" id="ads1" onclick="textNew()" />
+            Ad supported- (1 month): $15
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="Adsupported-2months" id="ads2" onclick="textNew()" />
+            Ad supported- (2 months): $12/month
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="Adsupported-12months" id="ads3" onclick="textNew()" />
+            Ad supported- (12 months): $8/month
+
+          </div>
+          <br />
+        </div>
+
+        <div class="box3" style="display: none">
+          <label for="hear1">Select any one item*:</label>
+          <div>
+            <br /><input type="radio" name="source1" value="PremiumFam-3months" id="fam1" onclick="textNew()" />
+            Premium- 2 devices (3 months): $45/month
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="PremiumFam-9months" id="fam2" onclick="textNew()" />
+            Premium- 3 devices (9 months):  $65/month
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="PremiumFam-12months" id="fam3" onclick="textNew()" />
+            Premium- 5 devices (12 months):  $80/month
+
+          </div>
+          <br />
+
+        </div>
+
+        <div class="box4" style="display: none">
+          <label for="hear1">Select any one item*:</label>
+          <div>
+            <br /><input type="radio" name="source1" value="Adsupported-1Day" id="day1" onclick="textNew()" />
+            Ad supported- (1 day): $5
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="Adsupported-2Days" id="day2" onclick="textNew()" />
+            Ad supported- (2 days): $8/-
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="Adsupported-3Days" id="day3" onclick="textNew()" />
+            Ad supported- (3 days): $12/-
+
+          </div>
+          <br />
+        </div>
+
+        <div class="box5" style="display: none">
+          <label for="hear1">Select any one item*:</label>
+          <div>
+            <br /><input type="radio" name="source1" value="PremiumMerch-3months" id="Multi1" onclick="textNew()" />
+            Premium + merch discounts (3 months): $50/month
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="PremiumMerch-9months" id="Multi2" onclick="textNew()" />
+            Premium + merch discounts (9 months): $40/month
+
+          </div>
+          <div>
+            <input type="radio" name="source1" value="PremiumMerch-12months" id="Multi3" onclick="textNew()" />
+            Premium + merch discounts (12 months): $30/month
+
+          </div>
+          <br />
+        </div>
+        <div><input type="text" id="username" name="username" minlength="3" maxlength="20" style="display: none;"></div>
+        <br />
+
+        <label for="zipcode" required="required">How did you hear*:</label>
+        <input type="checkbox" name="source" value="facebook" onclick="onlyOne(this)" />
+        Facebook
+        <input type="checkbox" name="source" value="google" onclick="onlyOne(this)" />
+        Google
+        <input type="checkbox" name="source" value="yelp" onclick="onlyOne(this)" />
+        Yelp <br /><br />
+
+        <label for="comments">Comments*:</label>
+        <textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"
+          required="required"></textarea>
+        <br /><br />
+        <input type="Submit" />
+        <input type="Reset" />
+        <br /><br />
+      </form>
+    </main>
+  </div>
+  <table id="table" border: 1px solid black; style="display: none; padding: 50px">
+    <tr>
+      <th>Title</th>
+      <th>First name</th>
+      <th>Last Name</th>
+      <th>Email ID</th>
+      <th>Phone Number</th>
+      <th>Street Address 1</th>
+      <th>Street Address 2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>NuFlix plan</th>
+      <th>Plan Type</th>
+      <th>Comments on the NuFlix plan</th>
+      <th>How did you hear</th>
+      <th>Comments</th>
+    </tr>
+  </table>
+  <script src="script.js"></script> 
+</body>
+
+</html>
