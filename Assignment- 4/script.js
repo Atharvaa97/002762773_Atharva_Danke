@@ -14,7 +14,7 @@ var regExName = /^[a-zA-Z]+$/;
 var regExEmail =
   /^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@northeastern.edu$/;
 var regExPhone = /\d{3}-?\d{3}-\d{4}$/;
-var regExZip = /^[0-9]{6}(?:-[0-9]{4})?$/;
+var regExZip = /^[0-9]{5}$/;
 
 var firstName = document.getElementById("firstName");
 firstName.addEventListener("input", validate);
