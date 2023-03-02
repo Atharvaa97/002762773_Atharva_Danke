@@ -15,7 +15,7 @@
 <body class="bodyimg">
     <div class="topnav">
         <a class="active" href="#home">Home</a>
-        <a href="#contact">About</a>
+        <a href="#home">About</a>
         <div class="dropdown">
             <button class="navbutton_title">My Account
                 <i class="fa fa-caret-down"></i>
@@ -23,7 +23,7 @@
             <div class="dropdown-content">
                 <a href="#">Settings</a>
             </div>
-            <a href="index.html" class="logout">Logout</a>
+            <a href="#home" class="logout">Logout</a>
         </div>
     </div>
 
@@ -36,9 +36,9 @@
                         <h1 class="header-text" id="display">00:00:00</h1>
                         <div class="row">
                             <button class="btn btn-primary form-control" id="handler" onclick="start()">Start</button>
-                            <button class="btn btn-primary form-control" onclick="Stop()">Stop</button>
+                            <button class="btn btn-primary form-control" onclick="stop()">Stop</button>
 
-                            <button class="btn btn-primary form-control" onclick="Reset()">Reset</button>
+                            <button class="btn btn-primary form-control" onclick="reset()">Reset</button>
                         </div>
                     </div>
                 </div>

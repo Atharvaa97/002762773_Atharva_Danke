@@ -1,19 +1,16 @@
 $(document).ready(function () {
   $("#signin-form").submit(function (event) {
-    event.preventDefault(); // prevent the form from submitting
+    event.preventDefault();
 
-    // Get the input values
     var username = $("#username-input").val();
     var email = $("#email-input").val();
     var password = $("#password-input").val();
 
-    // Reset the error messages
     $("#username-error").empty();
     $("#email-error").empty();
     $("#password-error").empty();
 
-    // Perform validations
-    if (username.trim() === "") {
+    if (!username || username.trim() === "") {
       $("#username-error").text("Username cannot be blank");
       return;
     }
@@ -30,12 +27,16 @@ $(document).ready(function () {
       return;
     }
 
+    if (!email) {
+      $("#email-error").text("Email cannot be blank");
+      return;
+    }
     if (!/^[a-zA-Z0-9._%+-]+@(northeastern|NEU)\.edu$/.test(email)) {
       $("#email-error").text("Must be a valid northeastern email address");
       return;
     }
 
-    if (password.trim() === "") {
+    if (!password || password.trim() === "") {
       $("#password-error").text("Password cannot be blank");
       return;
     }
@@ -45,11 +46,15 @@ $(document).ready(function () {
       );
       return;
     }
+    if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      $("#password-error").text(
+        "Password must contain at least one special character"
+      );
+      return;
+    }
 
-    // Store the username in localStorage
     window.localStorage.setItem("username", username);
 
-    // Redirect to the new page
     window.location.href = "calculator.html";
   });
 });

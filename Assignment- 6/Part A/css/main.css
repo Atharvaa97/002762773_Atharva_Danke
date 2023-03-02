@@ -193,3 +193,14 @@ input::placeholder{
     background-repeat: no-repeat; 
     background-size: cover;
 }
+
+label[for="result"] {
+  font-weight: bold;
+  font-size: 22px;
+  color: aliceblue;
+}
+
+#result {
+  font-size: 20px;
+  color: aliceblue;
+}

@@ -7,7 +7,7 @@ let displayMinutes = 0;
 let displayHours = 0;
 
 let status = "Stopped";
-let interval = "";
+let interval = null;
 
 function StartWatch() {
   seconds++;
@@ -44,27 +44,31 @@ function StartWatch() {
     displayHours + ":" + displayMinutes + ":" + displaySeconds;
 }
 
-function start() {
+async function start() {
   if (status == "Stopped") {
-    interval = window.setInterval(StartWatch, 1000);
-    // document.getElementById('handler').innerHTML = 'Stop';
     status = "Started";
+    interval = setInterval(() => {
+      StartWatch();
+    }, 1000);
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   }
 }
 
-function Stop() {
+async function stop() {
   if (status == "Started") {
-    window.clearInterval(interval);
-    document.getElementById("handler").innerHTML = "Start";
     status = "Stopped";
+    clearInterval(interval);
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   }
 }
 
-function Reset() {
+function reset() {
   seconds = 0;
   hours = 0;
   minutes = 0;
-  window.clearInterval(interval);
+  clearInterval(interval);
   document.getElementById("display").innerHTML = "00:00:00";
   document.getElementById("handler").innerHTML = "Start";
   status = "Stopped";
