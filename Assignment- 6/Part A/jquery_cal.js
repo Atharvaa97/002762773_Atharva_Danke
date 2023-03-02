@@ -2,57 +2,63 @@ $(document).ready(() => {
   const storedUsername = window.localStorage.getItem("username");
   $(".navbutton_title").text(storedUsername);
 
-  const performOperation = (a, b, operator) => {
-    if (isNaN(a) || isNaN(b)) {
-      alert("Invalid input");
+  let num1, num2, result;
+
+  const calculateResult = (operator) => {
+    if ($("#firstNumber").val() === "" || $("#secondNumber").val() === "") {
+      alert("Please enter both numbers");
       return;
     }
 
-    const result = (() => {
-      switch (operator) {
-        case "add":
-          return a + b;
-        case "sub":
-          return a - b;
-        case "mult":
-          return a * b;
-        case "divi":
-          if (b === 0) {
-            alert("Cannot divide by zero");
-            return;
-          }
-          return a / b;
-        default:
-          alert("Invalid operator");
-          return;
-      }
-    })();
+    num1 = parseInt($("#firstNumber").val());
+    num2 = parseInt($("#secondNumber").val());
 
-    if (result !== undefined) {
-      $("#result").text(result);
+    if (!$.isNumeric(num1) || !$.isNumeric(num2)) {
+      alert("Please enter a number");
+      return;
     }
+
+    switch (operator) {
+      case "add":
+        result = num1 + num2;
+        break;
+      case "sub":
+        result = num1 - num2;
+        break;
+      case "mult":
+        result = num1 * num2;
+        break;
+      case "divi":
+        if (num2 === 0) {
+          alert("Cannot divide by zero");
+          return;
+        }
+        result = num1 / num2;
+        break;
+      case "clear":
+        num1 = num2 = result = "";
+        $("#firstNumber").val("");
+        $("#secondNumber").val("");
+        $("#result").text("");
+        return;
+      default:
+        alert("Invalid operator");
+        return;
+    }
+
+    $("#result").text(result);
   };
 
-  $("#add, #sub, #mult, #divi, #clear, .number").on("click keyup", (e) => {
-    const { target } = e;
-    const { value, id } = target;
+  $(".operation").click((e) => {
+    const operator = e.target.id;
+    calculateResult(operator);
+  });
 
-    if (id === "clear") {
-      $("#firstNumber").val("");
-      $("#secondNumber").val("");
-      $("#result").text("");
-      return;
-    }
-
-    if (isNaN(Number(value))) {
+  $("input").keyup((e) => {
+    const inputVal = e.target.value;
+    if (!$.isNumeric(inputVal)) {
       alert("Please enter a number");
-      target.value = "";
-      return;
+      e.target.value = "";
     }
-
-    const num1 = Number($("#firstNumber").val());
-    const num2 = Number($("#secondNumber").val());
-
-    performOperation(num1, num2, id);
   });
 });
