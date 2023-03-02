@@ -14,45 +14,35 @@ $(document).ready(function () {
       $("#secondNumber").val("");
     }
   });
-  $("#add").click((e) => {
+  
+  const performOperation = (operator) => {
     if ($("#firstNumber").val() == "" || $("#secondNumber").val() == "") {
       alert("Please enter both numbers");
       return;
     }
     let num1 = parseInt($("#firstNumber").val());
     let num2 = parseInt($("#secondNumber").val());
-    let result = num1 + num2;
-    $("#result").val(result);
-  });
-  $("#sub").click((e) => {
-    if ($("#firstNumber").val() == "" || $("#secondNumber").val() == "") {
-      alert("Please enter both numbers");
-      return;
+    let result;
+    switch (operator) {
+      case "+":
+        result = num1 + num2;
+        break;
+      case "-":
+        result = num1 - num2;
+        break;
+      case "*":
+        result = num1 * num2;
+        break;
+      case "/":
+        result = num1 / num2;
+        break;
     }
-    let num1 = parseInt($("#firstNumber").val());
-    let num2 = parseInt($("#secondNumber").val());
-    let result = num1 - num2;
     $("#result").val(result);
-  });
-  $("#mult").click((e) => {
-    if ($("#firstNumber").val() == "" || $("#secondNumber").val() == "") {
-      alert("Please enter both numbers");
-      return;
-    }
-    let num1 = parseInt($("#firstNumber").val());
-    let num2 = parseInt($("#secondNumber").val());
-    let result = num1 * num2;
-    $("#result").val(result);
-  });
-  $("#divi").click((e) => {
-    if ($("#firstNumber").val() == "" || $("#firstNumber").val() == "") {
-      alert("Please enter both numbers");
-      return;
-    }
-    let num1 = parseInt($("#firstNumber").val());
-    let num2 = parseInt($("#secondNumber").val());
-    let result = num1 / num2;
-    $("#result").val(result);
-  });
-});
+  };
 
+  $("#add").click((e) => performOperation("+"));
+  $("#sub").click((e) => performOperation("-"));
+  $("#mult").click((e) => performOperation("*"));
+  $("#divi").click((e) => performOperation("/"));
+  
+});
