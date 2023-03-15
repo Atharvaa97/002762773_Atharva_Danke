@@ -1,0 +1,261 @@
+body {
+    background-color: black;
+  }
+  
+  .home {
+    margin: 40px;
+  }
+  
+  /* Title Styling */
+  
+  .title {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    color: #0bfcf4;
+  }
+  
+  .ftitle {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #0bfcf4;
+  }
+  
+  .videotitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Navigation bar styling */
+  
+  .topnav {
+    background-color: rgba(32, 31, 31, 0.7);
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #1d899f;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: red;
+    color: white;
+  }
+  
+  /* Footer styling */
+  
+  .footer {
+    background-color: #000;
+    width: 100%;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    margin-top: 80px;
+  }
+  
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer .footer-left {
+    width: 40%;
+  }
+  
+  /* Footer Center */
+  
+  .footer .footer-center {
+    width: 35%;
+  }
+  
+  .footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer.footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer.footer-center p a {
+    color: #5383d3;
+    text-decoration: none;
+  }
+  
+  /* Footer Right */
+  
+  .footer .footer-right {
+    width: 20%;
+  }
+  
+  .footer .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+  }
+  
+  .footer .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footercol {
+    color: #8f9296;
+    font-size: 14px;
+  }
+  
+  /* aside text styling */
+  
+  .aside_text {
+    font-size: larger;
+    font-style: italic;
+    font-size: 28px;
+    color: red;
+    float: right;
+    width: 35%;
+    padding-left: 5px;
+  }
+  
+  /* Image hover effect for Merchandise */
+  
+  .img:hover {
+    opacity: 0.5;
+  }
+  
+  .logout {
+    margin-left: 566px;
+  }
+  
+  /* Header and Footer Image Styling */
+  
+  .imglog {
+    width: 130px;
+    height: 130px;
+    float: left;
+  }
+  
+  .podimg
+  {
+    margin-left: -10px; 
+    width: 30%; 
+    height: 30%"
+  }
+  
+/* Form Styling */
+
+input[type="text"],
+select,
+textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left: -180px;
+  background-color: #cbcaca;
+}
+
+textarea {
+  width: 85%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left: -195px;
+}
+
+label {
+  padding: 15px 5px 12px 260px;
+  display: inline-block;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d899f;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  font-size: 18px;
+  margin-left: 11%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 38%;
+  margin-top: 6px;
+}
+
+.col-85 {
+  float: left;
+  width: 36%;
+  margin-top: 6px;
+}
+
+.option {
+  margin-left: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  

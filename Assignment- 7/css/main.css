@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.navbutton_title {
+    position: relative;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+.dropdown .navbutton_title {
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+  }
+
+.dropdown .navbutton_title:hover {
+    background: #1d899f;
+    color: black;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: auto;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav a.logout {
+    float: right;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 14px 16px;
+    padding-right: -35px;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+  
+.topnav a:hover {
+    background-color: #1d899f;
+    color: black;
+  }
+.topnav a.active {
+    background-color: red;
+    color: white;
+  }
+
+
+.card {
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    text-indent: 5px;
+    padding-left: 60px;
+  }
+
+.btn:hover,
+.btn:focus {
+  background: #1d899f;
+  color: black;
+}
+
+.Login_Form {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 5;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto auto;
+  padding: 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  border-radius: 4px;
+  padding: 60px 68px 40px 68px;
+}
+
+.form-box .header-text {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-align: left;
+  color: #fff;
+  text-align: center;
+}
+
+input::placeholder{
+  position: absolute;
+  cursor: text;
+  user-select: none;
+  font-size: 16px;
+  opacity: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 20px;
+  top: 15px;
+  color: white;
+  transition: font-size 100ms ease, top 100ms ease, opacity 100ms ease;
+}
+
+.form-box input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border-width: 0;
+  background-color: rgba(40, 39, 39, 0.74);
+  color: white;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.form-box button {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    border-width: 0;
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+  }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.bodyimg {
+    background-image: url('../images/calculator.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+label[for="result"] {
+  font-weight: bold;
+  font-size: 22px;
+  color: aliceblue;
+}
+
+#result {
+  font-size: 20px;
+  color: aliceblue;
+}

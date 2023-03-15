@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container Styling for login page */
+
+.container {
+  position: relative;
+  background-image: url('../images/NEU.png');
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: 50%;
+  width: 2000px;
+  height: 2000px;
+  border-radius: 50%;
+  background: linear-gradient(-20deg, #000, #000);
+  transform: translateY(-45%);
+  z-index: 6;
+  transition: 2s ease-in-out;
+}
+
+/* Container Styling for Homepage */
+
+#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery {
+  margin: 10px;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+#container2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery_merch {
+  float: left;
+  padding: 30px;
+  margin: 53px;
+}
+.gallery_merch img {
+  width: 305px;
+  height: 305px;
+}
+
+.gallery_merch:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 5px -5px red;
+  border: 1px solid grey;
+}
+
+.gallery_merch1 {
+  float: left;
+  padding: 30px;
+  margin: 50px;
+}
+.gallery_merch1 img {
+  width: 305px;
+  height: 305px;
+}
+
+.gallery_merch1:hover {
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 5px -5px red;
+  border: 1px solid grey;
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.gallery_merch a :hover {
+  color: white;
+}
+
+/* Login form Styling */
+
+.btn:hover,
+.btn:focus {
+  background: #1d899f;
+  color: black;
+}
+
+.Login_Form {
+  position: absolute;
+  top: 53%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  z-index: 5;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: auto auto;
+  padding: 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  border-radius: 4px;
+  padding: 60px 68px 40px 68px;
+}
+
+.form-box .header-text {
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-align: left;
+  color: #fff;
+}
+
+input::placeholder{
+  position: absolute;
+  cursor: text;
+  user-select: none;
+  font-size: 16px;
+  opacity: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 20px;
+  top: 15px;
+  color: white;
+  transition: font-size 100ms ease, top 100ms ease, opacity 100ms ease;
+}
+
+.form-box input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.form-box button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  border-width: 0;
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Panel Styling */
+
+.panels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 7;
+  overflow-y: auto;
+}
+.left__panel {
+  pointer-events: all;
+  padding: 30px 15% 20px 10%;
+}
+
+/* Panel Images */
+
+.panel__img {
+  width: 60%;
+  padding-top: 15px;
+  transition: 1s 0.6s ease-in-out;
+}
+
+.panel__imgflix {
+  width: 60%;
+  padding-top: 1px;
+  transition: 1s 0.6s ease-in-out;
+}
+
+/* Paragraph and Figure Caption Text Styling */
+
+.para {
+  color: white;
+  font-size: 23px;
+}
+
+.figcap {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+#username-error {
+  color: red;
+}
+
+#email-error {
+  color: red;
+}
+
+#password-error {
+  color: red;
+}
