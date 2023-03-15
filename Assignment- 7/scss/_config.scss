@@ -1,0 +1,13 @@
+$primary-color: black;
+//$primary-color: #0c0c0c;
+$secondary-color: #0bfcf4;
+$siliguri-font: 'Hind Siliguri', sans-serif; 
+
+@function set-text-color($color) {
+    @if(lightness($color) > 70) {
+        @return #333;
+    }
+    @else {
+        @return #fff;
+    }
+}

@@ -1,0 +1,144 @@
+@import "_mixins.scss";
+@import "_config.scss";
+
+
+
+
+.navbar{
+  padding: 3rem 0;
+  position: relative;
+
+  &__top{
+      @include flex(null, space-between);
+      
+      &--brand{
+          font-size: 2.5rem;
+          text-decoration: none;
+          color: white;
+          position: relative;
+
+          span{
+              color: $secondary-color;
+          }
+          &::before{
+              position: absolute;
+              content: "";
+              top: -4px;
+              height: .2rem;
+              width: 1.5rem;
+              background-color: white;
+          }
+      }
+
+      &--toggler{
+          background-color: transparent;
+          border: none;
+          height: 3rem;
+          width: 3rem;
+          @include flex(column, space-evenly);
+          cursor: pointer;
+          @include transition;
+          z-index: 999;
+
+          &:hover{
+              opacity: 0.8;
+          }
+
+          .line{
+              background-color: white;
+              height: .2rem;
+              width: 100%;
+              @include transition;
+          }
+          &.change .line__1{
+              transform: rotate(45deg) translate(0.3rem, 0.8rem);
+          }
+          &.change .line__2{
+              opacity: 0;
+              visibility: hidden;
+          }
+          &.change .line__3{
+              transform: rotate(-45deg) translate(0.3rem, -0.8rem);
+          }
+
+          @include desktop{
+              display: none;
+          }
+      }
+  }
+
+  &__collapse{
+      position: absolute;
+      top: calc(100% - 1rem);
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      height: 0;
+      @include transition;
+
+      &.show__nav{
+          height: calc(212px + 30px); // js related 
+      }
+
+      &--nav{
+          background-color: #fff;
+          padding: 1.5rem;
+          border-radius: 0.5rem;
+
+          & li{
+              margin: 2rem 0;
+              list-style-type: none;
+              text-align: center;
+          }
+          & a{
+              color: rgb(88, 88, 88);
+              text-decoration: none;
+              font-size: 1.7rem;
+              letter-spacing: 1px;
+              @include transition;
+
+              &:hover{
+                  color: $secondary-color;
+              }
+              &.active{
+                  color: $secondary-color;
+              }
+          }
+
+          @include desktop{
+              padding: 0;
+
+              & li{
+                  margin: 0;
+              }
+          }
+      }
+
+      @include desktop{
+          position: relative;
+          height: auto!important;
+
+          &--nav{
+              @include flex(null, flex-end);
+              background-color: transparent;
+
+              & a{
+                  color: #fff;
+
+                  &:hover{
+                      color: $secondary-color;
+                      opacity: 0.8;
+                  }
+              }
+              
+              & li{
+                  margin-left: 4rem;
+              }
+          }
+      }
+  }
+
+  @include desktop{
+      @include flex(null, space-between);
+  }
+}

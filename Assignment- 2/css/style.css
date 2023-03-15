@@ -75,7 +75,7 @@
 
 @keyframes cursor {
   0%,
-  10% {
+  20% {
     border-color: #212121;
   }
 }

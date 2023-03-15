@@ -1,0 +1,88 @@
+@import "_mixins.scss";
+@import "_config.scss";
+
+.color{
+    background-color: $primary-color;
+}
+
+
+input[type="text"],
+select {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left: 40px;
+  background-color: #cbcaca;
+}
+
+textarea {
+  width: 81%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  margin-left: 50px;
+  background-color: #cbcaca;
+}
+
+label {
+  padding: 10px;
+  margin-left: 230px;
+  display: inline-block;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  margin-left: 50%;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d899f;
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: scale(1.25);
+  color: white;
+  transition: 0.3s;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  font-size: 18px;
+  margin-left: 11%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 38%;
+  margin-top: -6px;
+  padding: 10px;
+}
+
+.col-85 {
+  float: left;
+  width: 36%;
+  margin-top: 6px;
+}
+
+.option {
+  margin-left: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,102 @@
+//@import "_utilities";
+@import "_config";
+@import "_mixins.scss";
+@import "_footer.scss";
+@import "_banner.scss";
+@import "_container.scss";
+@import "_nav.scss";
+@import "_login.scss";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html{
+    font-size: 13px;
+}
+
+  body{
+    min-height: 100vh;
+    background-color: $primary-color;
+    color: white;
+    font-family: $siliguri-font;
+}
+
+.wrapper{
+    max-width: 94%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+.imglog {
+  width: 130px;
+  height: 130px;
+  float: left;
+}
+
+.ftitle {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  color: #0bfcf4;
+}
+
+.aside_text {
+  font-size: larger;
+  font-style: italic;
+  font-size: 24px;
+  color: red;
+  float: right;
+  width: 35%;
+  padding-left: 5px;
+}
+
+.para {
+color: white;
+font-size: 20px;
+}
+
+
+.mtitle {
+  font-size: 35px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #bdeee6;
+  position: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #bdeee6;
+  position: center;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #bdeee6;
+  margin-left: 580px;
+  animation: cursor 3s step-start infinite, text 3s steps(14) alternate infinite;
+}
+
+@keyframes cursor {
+  0%,
+  4% {
+    border-color: #212121;
+  }
+}
+
+@keyframes text {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 13ch;
+  }
+}

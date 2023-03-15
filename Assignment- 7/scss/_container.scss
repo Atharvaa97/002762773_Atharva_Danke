@@ -1,0 +1,83 @@
+@import "_mixins.scss";
+@import "_config.scss";
+
+
+
+#container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery {
+  margin: 10px;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+#container2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery_merch {
+  float: left;
+  padding: 30px;
+  margin: 53px;
+}
+.gallery_merch img {
+  width: 305px;
+  height: 305px;
+}
+
+.gallery_merch:hover {
+  cursor: pointer;
+  border: 1px solid rgba(27, 197, 194, 0.826);
+  opacity: 0.5;
+  box-shadow: 1px 2px 4px 2px rgba(27, 197, 194, 0.526);
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1);
+}
+
+.gallery_merch1 {
+  float: left;
+  padding: 30px;
+  margin: 50px;
+}
+.gallery_merch1 img {
+  width: 305px;
+  height: 305px;
+}
+
+.gallery_merch1:hover {
+  cursor: pointer;
+  border: 1px solid rgba(27, 197, 194, 0.826);
+  opacity: 0.5;
+  box-shadow: 1px 2px 4px 2px rgba(27, 197, 194, 0.526);
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1);
+}
+
+.desc {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.gallery_merch a :hover {
+  color: white;
+}  
+  
+  
