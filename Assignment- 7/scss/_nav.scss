@@ -5,8 +5,15 @@
 
 
 .navbar{
-  padding: 3rem 0;
+  padding: 5px;
   position: relative;
+  background-color: black;
+
+.imglog {
+  width: 130px;
+  height: 130px;
+  float: left;
+}
 
   &__top{
       @include flex(null, space-between);

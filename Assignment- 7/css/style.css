@@ -264,8 +264,14 @@
 }
 
 .navbar {
-  padding: 3rem 0;
+  padding: 5px;
   position: relative;
+  background-color: black;
+}
+.navbar .imglog {
+  width: 130px;
+  height: 130px;
+  float: left;
 }
 .navbar__top {
   display: flex;
@@ -515,8 +521,7 @@ body {
 }
 
 .ftitle {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 35px;
   text-align: left;
   color: #0bfcf4;
 }
@@ -571,4 +576,9 @@ body {
   100% {
     width: 13ch;
   }
+}
+.figcap {
+  color: white;
+  text-align: center;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
