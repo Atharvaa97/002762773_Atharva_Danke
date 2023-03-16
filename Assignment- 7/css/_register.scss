@@ -5,7 +5,6 @@
     background-color: $primary-color;
 }
 
-
 input[type="text"],
 select {
   width: 80%;
@@ -13,25 +12,23 @@ select {
   border: 1px solid #dcdcdc;
   border-radius: 4px;
   resize: vertical;
-  margin-left: 40px;
-  background-color: #cbcaca;
-  ::placeholder {
-    color: #888;
-  }
-}
-
-textarea {
-  width: 81%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
   margin-left: 50px;
   background-color: #cbcaca;
+
   ::placeholder {
-    color: #888;
+    color: #dcdcdc;
   }
 }
+  textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-left: 80px;
+    background-color: #cbcaca;
+}
+
 
 label {
   padding: 10px;

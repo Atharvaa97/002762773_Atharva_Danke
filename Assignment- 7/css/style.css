@@ -5,24 +5,16 @@
   padding: 55px 50px;
   margin-top: 80px;
 }
-
-.footer .footer-left,
-.footer .footer-center,
-.footer .footer-right {
+.footer .footer-left, .footer .footer-center, .footer .footer-right {
   display: inline-block;
   vertical-align: top;
 }
-
-/* Footer left */
 .footer .footer-left {
   width: 40%;
 }
-
-/* Footer Center */
 .footer .footer-center {
   width: 35%;
 }
-
 .footer .footer-center i {
   background-color: #33383b;
   color: #ffffff;
@@ -35,52 +27,43 @@
   margin: 10px 15px;
   vertical-align: middle;
 }
-
-.footer.footer-center i.fa-envelope {
+.footer .footer-center i.fa-envelope {
   font-size: 17px;
   line-height: 38px;
 }
-
 .footer .footer-center p {
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
   margin: 0;
 }
-
 .footer .footer-center p span {
   display: block;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
 }
-
-.footer.footer-center p a {
+.footer .footer-center p a {
   color: #5383d3;
   text-decoration: none;
 }
-
-/* Footer Right */
 .footer .footer-right {
   width: 20%;
 }
-
-.footer .footer-company-about {
+.footer .footer-right .footer-company-about {
   line-height: 20px;
   color: #92999f;
   font-size: 13px;
   font-weight: normal;
 }
-
-.footer .footer-company-about span {
+.footer .footer-right .footer-company-about span {
   display: block;
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
-.footercol {
+.footer .footer-right .footer-company-about .footercol {
   color: #8f9296;
   font-size: 14px;
 }
@@ -213,12 +196,10 @@
   padding: 30px;
   margin: 53px;
 }
-
 .gallery_merch img {
   width: 305px;
   height: 305px;
 }
-
 .gallery_merch:hover {
   cursor: pointer;
   border: 1px solid rgba(27, 197, 194, 0.826);
@@ -235,12 +216,10 @@
   padding: 30px;
   margin: 50px;
 }
-
 .gallery_merch1 img {
   width: 305px;
   height: 305px;
 }
-
 .gallery_merch1:hover {
   cursor: pointer;
   border: 1px solid rgba(27, 197, 194, 0.826);
@@ -259,7 +238,7 @@
   color: white;
 }
 
-.gallery_merch a :hover {
+.gallery_merch a:hover {
   color: white;
 }
 
