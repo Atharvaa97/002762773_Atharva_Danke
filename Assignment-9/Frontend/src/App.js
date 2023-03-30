@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
-import Home from "./pages/Home/Home";
-import Job from "./pages/Job/Job";
-import Login from "./pages/Login/Login";
+import About from "./App/About/About";
+import Contact from "./App/Contact/Contact";
+import Home from "./App/Home/Home";
+import Job from "./App/Job/Job";
+import Login from "./App/Login/Login";
 
 function App() {
   const [user, setUser] = useState(null);
