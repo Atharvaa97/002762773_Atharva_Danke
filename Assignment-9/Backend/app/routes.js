@@ -28,7 +28,23 @@ module.exports = function (app) {
     }
   });
   
+  app.post("/api/authenticate", async function (req, res) {
+    const { email, password } = req.body;
+    const user = await User.findOne({ email });
   
+    if (!user || user.password !== password) {
+      res.status(401).json({ message: "Invalid email or password" });
+      return;
+    }
+  
+    const token = generateToken(user._id);
+    res.json({ token });
+  });
+  
+  function generateToken(userId) {
+    return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: "1h" });
+  }
+    
 // insert data
 
   app.post("/api/create", async function (req, res) {

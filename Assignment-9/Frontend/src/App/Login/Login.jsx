@@ -6,31 +6,27 @@ const Login = ({ setUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const loginUser = (e) => {
+  const loginUser = async (e) => {
     e.preventDefault();
-    fetch("http://localhost:8080/api/create", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, email, password }),
-    })
-      .then((res) => {
-        if (res.status === 409) {
-          res.json()
-            .then((user) => setUser(user))
-            .catch((err) => alert(err));
-        } else if (res.status === 409) {
-          alert("User already exists");
-        } else {
-          alert("Invalid Credentials");
-        }
-      })
-      .catch((err) => {
-        alert("Invalid email or password");
+    try {
+      const res = await fetch("http://localhost:8080/api/authenticate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
       });
+      if (res.status === 200) {
+        const { token } = await res.json();
+        localStorage.setItem("token", token);
+        setUser(user);
+      } else {
+        const { message } = await res.json();
+        alert(message);
+      }
+    } catch (err) {
+      alert("An error occurred while logging in");
+    }
   };
-
+  
   return (
     <>
       <div className="container">
