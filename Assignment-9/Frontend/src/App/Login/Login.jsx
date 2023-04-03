@@ -6,27 +6,30 @@ const Login = ({ setUser }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const loginUser = async (e) => {
+  const loginUser = (e) => {
     e.preventDefault();
-    try {
-      const res = await fetch("http://localhost:8080/api/authenticate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
+    fetch("http://localhost:8080/api/authenticate", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, password }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          res.json()
+            .then((user) => setUser(user))
+            .catch((err) => alert(err));
+        } else {
+          alert("User not found");
+        }
+      })
+      .catch((err) => {
+        alert("Error occurred while creating user");
       });
-      if (res.status === 200) {
-        const { token } = await res.json();
-        localStorage.setItem("token", token);
-        setUser(user);
-      } else {
-        const { message } = await res.json();
-        alert(message);
-      }
-    } catch (err) {
-      alert("An error occurred while logging in");
-    }
   };
   
+
   return (
     <>
       <div className="container">

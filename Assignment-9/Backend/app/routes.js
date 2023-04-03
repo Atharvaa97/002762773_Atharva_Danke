@@ -28,23 +28,7 @@ module.exports = function (app) {
     }
   });
   
-  app.post("/api/authenticate", async function (req, res) {
-    const { email, password } = req.body;
-    const user = await User.findOne({ email });
   
-    if (!user || user.password !== password) {
-      res.status(401).json({ message: "Invalid email or password" });
-      return;
-    }
-  
-    const token = generateToken(user._id);
-    res.json({ token });
-  });
-  
-  function generateToken(userId) {
-    return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: "1h" });
-  }
-    
 // insert data
 
   app.post("/api/create", async function (req, res) {
@@ -98,7 +82,57 @@ module.exports = function (app) {
         res.status(500).json({message:"Internal Server Error"});
     }
   });
+
+  app.post("/api/authenticate", async function (req, res) {
+    const expectedParams = ['name', 'email', 'password'];
   
+    // Check if any unexpected parameter is present in the request body
+    const unexpectedParams = Object.keys(req.body).filter(param => !expectedParams.includes(param));
+    if (unexpectedParams.length > 0) {
+      return res.status(400).json({ message: `Unexpected parameters: ${unexpectedParams.join(', ')}` });
+    }
+  
+    try {
+      var regexEmail = /[a-z0-9]+@northeastern.edu/;
+      var regexPwd = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%&*]).{8,}$/;
+      var regExName = /^[a-zA-Z]+$/;
+      var em = req.body.email;
+      var pass = req.body.password;
+      var name = req.body.name;
+  
+      if (!name.match(regExName)) {
+        res.status(400).json({message: "Name is in invalid format"});
+      } else if(!name){
+        res.status(400).json({message:"Name is required"});
+      } else if (!em.match(regexEmail)) {
+        res.status(400).json({message: "Email is in invalid format, use northeastern.edu format"});
+      } else if(!em){
+        res.status(400).json({message:"Email is required"});
+      } else if (!pass.match(regexPwd)) {
+        res.status(400).json({message: "Password is in invalid format, follow password rules : 1 Uppercase Character, 1 lower character, 1 special character, 1 digit and minimum 8 characters"});
+      } else if(!pass){
+        res.status(400).json({message:"Password is required"});
+      } else {
+        // Check if email already exists
+        const user = await Sample.findOne({ email: em });
+        if (user) {
+          // User exists, check if password matches
+          const match = await bcrypt.compare(pass, user.password);
+          if (match) {
+            res.status(200).json({message: "Login successful"});
+          } else {
+            res.status(401).json({message: "Incorrect password"});
+          }
+        } else {
+          res.status(404).json({message: "Email not registered"});
+        }
+      }
+    } catch (err) {
+      res.status(500).json({message:"Internal Server Error"});
+    }
+  });
+  
+
 //update data
 app.put('/api/update', async function (req, res) {
     console.log(req.body);
